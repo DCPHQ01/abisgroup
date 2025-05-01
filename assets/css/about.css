@@ -354,9 +354,17 @@
 }
 
 [data-animate-on-scroll="fade-left"] {
-  transform: translateX(-50px);
+  transform: translateX(-100px);
 }
 
 [data-animate-on-scroll="fade-right"] {
-  transform: translateX(50px);
+  transform: translateX(100px);
+}
+
+.subsidiaries{
+  margin: 70px 0px;
+}
+
+.about-just{
+  text-align: justify;
 }
