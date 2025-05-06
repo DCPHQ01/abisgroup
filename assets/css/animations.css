@@ -45,6 +45,11 @@
     100% { transform: scale(1); }
   }
   
+  body {
+    overflow-x: hidden;
+  }
+
+
   /* Animation Classes */
   .animate-fadeIn {
     animation: fadeIn 1s ease-in-out;
