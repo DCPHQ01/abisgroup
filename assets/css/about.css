@@ -59,7 +59,7 @@
   /* About Content Section */
   .about-content {
     padding: 80px 0;
-    background: var(--light);
+    /* background: var(--light); */
   }
   
   .about-intro {
@@ -98,7 +98,7 @@
   .about-text p {
     margin-bottom: 20px;
     line-height: 1.8;
-    color: var(--text);
+    /* color: var(--text); */
   }
   
   .about-text strong {
@@ -115,7 +115,7 @@
   }
   
   .about-card {
-    background: white;
+    /* background: white; */
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -146,7 +146,7 @@
   } */
   
   .about-card p {
-    color: var(--text);
+    /* color: var(--text); */
     line-height: 1.8;
   }
   
@@ -310,7 +310,7 @@
 }
 
 .capability-box {
-  background-color: #fdfdfd;
+  /* background-color: #fdfdfd; */
   padding: 2.5rem 2rem;
   border-radius: 1.25rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -336,7 +336,7 @@
 .sub-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #333;
+  /* color: #333; */
 }
 
 /* Animation classes */
