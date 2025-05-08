@@ -63,7 +63,10 @@ healthy livestock products, hygienic livestock, high-quality livestock, Halal re
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Products</a>
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Products</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="contact.html">Contact Us</a>
@@ -72,7 +75,7 @@ healthy livestock products, hygienic livestock, high-quality livestock, Halal re
           </ul>
         </div>
         <div class="d-lg-block d-none">
-          <a href="contact.html" class="btn btn-style btn-secondary ml-lg-3">Order Now</a>
+          <a href="contact.html" class="btn btn-style btn-secondary ml-lg-3">Market Place</a>
         </div>
         <!-- toggle switch for light and dark theme -->
         <div class="mobile-position">
@@ -99,7 +102,7 @@ healthy livestock products, hygienic livestock, high-quality livestock, Halal re
       <div class="container">
         <h2 class="title">Contact</h2>
         <ul class="breadcrumbs-custom-path mt-2">
-          <li><a href="#url">Home</a></li>
+          <li><a href="/index.html">Home</a></li>
           <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Contact </li>
         </ul>
       </div>
@@ -200,8 +203,9 @@ Abuja, FCT.
             <ul>
               <h6 class="footer-title-29">Links</h6>
               <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="services.html">Products</a></li>
+              <li><a href="about.html">About</a></li> 
+              <li><a href="services.html">Services</a></li>
+              <li><a href="product.html">Products</a></li>
               <li><a href="#"> Blog posts</a></li>
               <li><a href="contact.html">Contact us</a></li>
             </ul>
@@ -263,7 +267,7 @@ Ajiwe Lekki Lagos.</p>
   <section class="w3l-footer-29-main w3l-copyright">
     <div class="container">
       <div class="bottom-copies">
-        <p class="copy-footer-29 text-center">© 2024 ABIS Group. All rights reserved. Design by <a
+        <p class="copy-footer-29 text-center">© <span id="year"></span> ABIS Group. All rights reserved. Design by <a
             href="https://geekchamp.gwtagency.com.ng/" target="_blank">
             Geek</a></p>
       </div>
@@ -341,6 +345,10 @@ Ajiwe Lekki Lagos.</p>
   <!--//MENU-JS-->
 
   <script src="assets/js/bootstrap.min.js"></script>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 

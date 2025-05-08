@@ -201,3 +201,25 @@ img:hover {
   background-size: cover;
   z-index: 0;
 } */
+
+.view-link {
+  color: #1fa12e;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.view-link .arrow {
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.view-link:hover .arrow {
+  transform: translateX(5px);
+}
+
+.view-link:hover {
+  color: darkgreen;
+}
