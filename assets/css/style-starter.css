@@ -4601,6 +4601,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .navbar-brand {
@@ -16962,6 +16963,10 @@ p.count-text {
   .w3l-footer-29-main h6.footer-title-29 {
     font-size: 22px;
   }
+}
+
+.grids5-info {
+  margin-top: 2.5rem;
 }
 
 /*# sourceMappingURL=style-freedom.css.map */
