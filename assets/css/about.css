@@ -268,7 +268,7 @@
 
   /* mission and vission card */
 
-.goals{
+.goals {
   position: relative !important;
   padding: 10px 20px !important;
   background-color: #21a130 !important;
@@ -279,17 +279,55 @@
   margin-bottom: 0 !important;
 }
 
-.missionvision{
+.missionvision {
   padding-top: 0 !important;
 }
 
-.about-flex{
+.about-flex {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.about-first{
-  margin-bottom: 140px;
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Adds space between cards */
+  max-width: 1000px; /* Adjust as needed */
+  width: 100%;
+}
+
+.about-card {
+  flex: 1;
+  min-width: 300px; /* Minimum width for each card */
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  position: relative;
+  margin-top: 25px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .about-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-card {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+  }
+  
+  /* Optional: Adjust animation timing for mobile */
+  .mission {
+    animation-delay: 0.1s;
+  }
+  .vision {
+    animation-delay: 0.3s;
+  }
 }
 .capability-container{
   display: flex !important;
