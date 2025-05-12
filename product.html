@@ -35,7 +35,7 @@ Author URL: http://w3layouts.com
       <a class="navbar-brand" href="#index.html">
           <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
       </a> -->
-        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+        <button class="navbar-toggler btn-hover-effect  collapsed bg-gradient" type="button" data-toggle="collapse"
           data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
@@ -45,7 +45,7 @@ Author URL: http://w3layouts.com
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -54,18 +54,32 @@ Author URL: http://w3layouts.com
             <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="product.html">Products</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
 
+            <!-- Mobile Market Place Button -->
+            <li class="nav-item text-center d-lg-none">
+              <a href="marketindex.html" class="nav-link btn btn-sm btn-secondary mobile-market-btn">Market Place</a>
+            </li>
           </ul>
         </div>
-        <div class="d-lg-block d-none">
-          <a href="marketindex.html" class="btn btn-style btn-secondary ml-lg-3">Market Place</a>
+
+        <div class="d-none d-lg-block ml-lg-3">
+          <a href="marketindex.html" class="btn btn-style btn-secondary desktop-market-btn">Market Place</a>
         </div>
+        <!-- Desktop -->
+          <!-- <div class="d-none d-lg-block">
+            <a href="marketindex.html" class="btn btn-style btn-secondary ml-lg-3">Market Place</a>
+          </div> -->
+
+          <!-- Mobile -->
+          <!-- <div class="d-block d-lg-none mt-3">
+            <a href="marketindex.html" class="btn btn-style btn-secondary btn-block">Market Place</a>
+          </div> -->
         <!-- toggle switch for light and dark theme -->
         <div class="mobile-position">
           <nav class="navigation">

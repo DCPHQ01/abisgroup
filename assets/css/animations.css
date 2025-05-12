@@ -153,6 +153,16 @@
     transform: translateX(0);
     opacity: 1;
   }
+
+  @media (max-width: 768px) {
+  [data-animate-on-scroll].animate-left.out-of-view {
+    transform: translateX(-100px) rotate(-90deg);
+  }
+
+  [data-animate-on-scroll].animate-right.out-of-view {
+    transform: translateX(100px) rotate(90deg);
+  }
+}
   
   /* Optional: staggered delay */
   .animate-slide:nth-child(1) { transition-delay: 0.2s; }

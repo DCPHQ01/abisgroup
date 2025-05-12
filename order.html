@@ -35,7 +35,7 @@
 </head>
 <body>
 <!--header-->
-<header id="site-header" class="fixed-top">
+  <header id="site-header" class="fixed-top">
     <div class="container">
       <nav class="navbar navbar-expand-lg stroke">
         <h1><a class="navbar-brand mr-lg-5" href="index.html">
@@ -67,13 +67,25 @@
             <li class="nav-item">
               <a class="nav-link" href="product.html">Products</a>
             </li>
-          
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
 
+            <!-- Mobile Market Place Button -->
+            <li class="nav-item text-center d-lg-none">
+              <a href="marketindex.html" class="nav-link btn btn-sm btn-secondary mobile-market-btn">Market Place</a>
+            </li>
           </ul>
         </div>
+        <!-- Desktop -->
+          <!-- <div class="d-none d-lg-block">
+            <a href="marketindex.html" class="btn btn-style btn-secondary ml-lg-3">Market Place</a>
+          </div> -->
+
+          <!-- Mobile -->
+          <!-- <div class="d-block d-lg-none mt-3">
+            <a href="marketindex.html" class="btn btn-style btn-secondary btn-block">Market Place</a>
+          </div> -->
         <!-- toggle switch for light and dark theme -->
         <div class="mobile-position">
           <nav class="navigation">
@@ -95,7 +107,7 @@
   <!-- //header -->
 
 <!-- about breadcrumb -->
-<section class="w3l-about-breadcrumb text-left">
+  <section class="w3l-about-breadcrumb text-left">
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
       <div class="container">
         <h2 class="title">Place Order</h2>
@@ -200,12 +212,12 @@
     </div>
 
     <div class="checkbox-group">
-      <label><input type="checkbox" name="Product" value="cow"> Cow</label>
-      <label><input type="checkbox" name="Product" value="chicken"> Chicken</label>
-      <label><input type="checkbox" name="Product" value="turkey"> Turkey</label>
-      <label><input type="checkbox" name="Product" value="goat"> Goat</label>
-      <label><input type="checkbox" name="Product" value="ram"> Ram</label>
-      <label><input type="checkbox" name="Product" value="fish"> Fish</label>
+      <label><input type="checkbox" name="Product[]" value="cow"> Cow</label>
+      <label><input type="checkbox" name="Product[]" value="chicken"> Chicken</label>
+      <label><input type="checkbox" name="Product[]" value="turkey"> Turkey</label>
+      <label><input type="checkbox" name="Product[]" value="goat"> Goat</label>
+      <label><input type="checkbox" name="Product[]" value="ram"> Ram</label>
+      <label><input type="checkbox" name="Product[]" value="fish"> Fish</label>
     </div>
 
     <div class="form-row">
@@ -218,7 +230,6 @@
       <button type="submit">Submit Order</button>
     </div>
   </form>
-</div>
 
 <div class="contact-info-body" >
     <div class="contact-info">
