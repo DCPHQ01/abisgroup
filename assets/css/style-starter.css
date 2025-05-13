@@ -14924,11 +14924,11 @@ nav ul li a:hover {
 }
 
 .w3l-main-slider .banner-info-bg p {
-  color: #fff;
-  font-weight: 300;
+  color: var(--secondary-color);
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 30px;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 6px;
   letter-spacing: 1px;
 }
@@ -15020,7 +15020,7 @@ a.view:hover {
   left: 0;
   right: 0;
   z-index: -1;
-  background-color: #0a0a0a;
+  background-color: #2F2F2F;  
   opacity: .5;
 }
 .banhny-w3grids {
@@ -15799,8 +15799,9 @@ a.read span {
 
 /*-- stats --*/
 .w3l-stats{
-  background: var(--bg-light);
+  background-color: #D7D7D7;
 }
+
 .stats_info p {
   font-size: 50px;
   line-height: 60px;
