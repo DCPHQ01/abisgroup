@@ -202,7 +202,7 @@ healthy livestock products, hygienic livestock, high-quality livestock, Halal re
   <div class="modal-overlay" id="applicationModal">
     <div class="modal-content">
       <button class="close-modal" id="closeModal">&times;</button>
-      <form class="application-form" id="jobApplicationForm">
+      <form class="application-form" id="jobApplicationForm" enctype="multipart/form-data">
         <input type="hidden" name="_autoresponse" value="Thank you for applying to join ABIS Group! We've received your application and our team will review it shortly. If we need any additional information, we'll reach out to you using the contact details you provided.">
 
         <h2>Job Application</h2>
@@ -442,47 +442,82 @@ healthy livestock products, hygienic livestock, high-quality livestock, Halal re
     });
 
     // Form submission
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      const submitBtn = form.querySelector('.submit-btn');
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+ // Form submission
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const submitBtn = form.querySelector('.submit-btn');
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
 
-      // Create FormData object
-      const formData = new FormData(form);
-      
-      // Add FormSubmit.co specific parameters
-      formData.append('_template', 'table');
-      formData.append('_subject', `New Application: ${formData.get('Job_Title')}`);
-      
-      fetch('https://formsubmit.co/ajax/careers@abisgroup.africa', {
-        method: 'POST',
-        body: formData
-      })
-      .then(response => response.json())
-      .then(data => {
-        if (data.success) {
-          // Success actions
-          modal.classList.remove('active');
-          form.reset();
-          fileNameLabel.innerHTML = '<i class="fas fa-cloud-upload-alt"></i> Choose file (PDF, DOC/DOCX)';
-          
-          // Show success message
-          alert('Thank you for applying to join ABIS Group! We have received your application and our team will review it shortly. If we need any additional information, we will reach out to you using the contact details you provided.');
-        } else {
-          throw new Error(data.message);
-        }
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        alert('There was an error submitting your application. Please try again or email us directly at careers@abisgroup.com');
-      })
-      .finally(() => {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Submit Application';
-      });
-    });
+  // Create FormData object
+  const formData = new FormData(form);
+  
+  // Ensure the file is properly attached
+  const fileInput = document.getElementById('resume');
+  if (fileInput.files[0]) {
+    // Remove any previous file and add it again to ensure it's attached properly
+    formData.delete('resume');
+    formData.append('resume', fileInput.files[0]);
+  }
+  
+  // Add FormSubmit.co specific parameters
+  formData.append('_captcha', 'false'); // Disable captcha if needed
+  formData.append('_template', 'table');
+  formData.append('_subject', `New Job Application: ${formData.get('Job_Title')}`);
+  formData.append('_replyto', formData.get('email')); // Auto-reply to applicant
+  formData.append('_cc', 'careers@abisgroup.africa'); // CC to careers email
+
+  // IMPORTANT: Using the direct endpoint instead of the ajax endpoint for file uploads
+  const formActionUrl = 'https://formsubmit.co/careers@abisgroup.africa';
+  
+  // Create a temporary form to submit the data
+  const tempForm = document.createElement('form');
+  tempForm.method = 'POST';
+  tempForm.action = formActionUrl;
+  tempForm.enctype = 'multipart/form-data'; // Critical for file uploads
+  tempForm.style.display = 'none';
+  
+  // Transfer all form data to the temporary form
+  for (const pair of formData.entries()) {
+    const input = document.createElement('input');
+    
+    // Handle file input differently
+    if (pair[1] instanceof File) {
+      // Clone the file input
+      const fileClone = fileInput.cloneNode(true);
+      tempForm.appendChild(fileClone);
+    } else {
+      // Handle regular inputs
+      input.type = 'hidden';
+      input.name = pair[0];
+      input.value = pair[1];
+      tempForm.appendChild(input);
+    }
+  }
+  
+  // Add the temp form to the document, submit it, and then remove it
+  document.body.appendChild(tempForm);
+  
+  // Set a listener to handle completion
+  window.addEventListener('pagehide', function pageHideHandler() {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Submit Application';
+    
+    // Show success message when returning from submission
+    setTimeout(() => {
+      alert('Thank you for applying to join ABIS Group! We have received your application and our team will review it shortly. If we need any additional information, we will reach out to you using the contact details you provided.');
+      modal.classList.remove('active');
+      form.reset();
+      fileNameLabel.innerHTML = '<i class="fas fa-cloud-upload-alt"></i> Choose file (PDF, DOC/DOCX)';
+    }, 1000);
+    
+    window.removeEventListener('pagehide', pageHideHandler);
+  });
+  
+  // Submit the form
+  tempForm.submit();
+});
   });
 </script>
 
