@@ -72,6 +72,19 @@
         .apply-btn:hover {
             background-color: #c0392b;
         }
+
+        .no-listing {
+            display: block;
+            justify-self: center;
+            padding: 50px 50px;
+            width: 70%;
+        }
+
+        .no-listing h2 {
+            justify-self: center;
+            padding: 20px;
+            color: var(--secondary-color);
+        }
         
         /* Benefits Section */
         .benefits {
