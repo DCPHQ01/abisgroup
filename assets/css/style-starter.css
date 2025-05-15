@@ -4603,7 +4603,6 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .navbar-brand {
@@ -14117,7 +14116,7 @@ input,
 select,
 label,
 li {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   outline: none;
   font-family: 'Poppins', sans-serif;
 }
