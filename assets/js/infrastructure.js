@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const infraDetails = {
     'Cold Rooms': {
       images: [
-        { src: 'assets/images/coldroom/coldroom-1.jpg', mobileSrc: 'assets/images/coldroom/in1-mobile.jpg' },
-        { src: 'assets/images/coldroom/coldroom-2.jpg', mobileSrc: 'assets/images/coldroom/coldroom-2-mobile.jpg' },
+        { src: 'assets/images/coldroom/coldroom-1.jpg', mobileSrc: 'assets/images/coldroom/coldroom-1.jpg' },
+        { src: 'assets/images/coldroom/coldroom-2.jpg', mobileSrc: 'assets/images/coldroom/coldroom-2.jpg' },
       ],
       content: `
         <h4 id="coldRoomsHeading">Temperature Controlled Excellence</h4>
@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     'Fish Pond': {
       images: [
-        { src: 'assets/images/fishpond/fishpond-1.jpg', mobileSrc: 'assets/images/coldroom/in1-mobile.jpg' },
-        { src: 'assets/images/fishpond/fishpond-2.jpg', mobileSrc: 'assets/images/coldroom/coldroom-2-mobile.jpg' },
-        { src: 'assets/images/fishpond/fishpond-3.jpg', mobileSrc: 'assets/images/coldroom/coldroom-2-mobile.jpg' },
-        { src: 'assets/images/fishpond/fishpond-4.jpg', mobileSrc: 'assets/images/coldroom/coldroom-2-mobile.jpg' },
+        { src: 'assets/images/fishpond/fishpond-1.jpg', mobileSrc: 'assets/images/fishpond/fishpond-1.jpg' },
+        { src: 'assets/images/fishpond/fishpond-2.jpg', mobileSrc: 'assets/images/fishpond/fishpond-1.jpg' },
+        { src: 'assets/images/fishpond/fishpond-3.jpg', mobileSrc: 'assets/images/fishpond/fishpond-3.jpg' },
+        { src: 'assets/images/fishpond/fishpond-4.jpg', mobileSrc: 'assets/images/fishpond/fishpond-4.jpg' },
       ],
       content: `
         <h4 id="fishPondHeading">Sustainable Aquaculture Facilities</h4>
@@ -45,11 +45,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     'Bio Gas Chamber': {
       images: [
-        { src: 'assets/images/biogaschamber/biogas-1.jpg', mobileSrc: 'assets/images/biogaschamber/biogas-6.jpg' },
-        { src: 'assets/images/biogaschamber/biogas-2.jpg', mobileSrc: 'assets/images/biogaschamber/biogas-6.jpg' },
-        { src: 'assets/images/biogaschamber/biogas-3.jpg', mobileSrc: 'assets/images/biogaschamber/biogas-6.jpg' },
-        { src: 'assets/images/biogaschamber/biogas-4.jpg', mobileSrc: 'assets/images/biogaschamber/biogas-6.jpg' },
-        { src: 'assets/images/biogaschamber/biogas-5.jpg', mobileSrc: 'assets/images/biogaschamber/biogas-6.jpg' },
+        { src: 'assets/images/biogaschamber/biogas-1.jpg', mobileSrc: 'assets/images/biogaschamber/biogas-1.jpg' },
+        { src: 'assets/images/biogaschamber/biogas-2.jpg', mobileSrc: 'assets/images/biogaschamber/biogas-2.jpg' },
+        { src: 'assets/images/biogaschamber/biogas-3.jpg', mobileSrc: 'assets/images/biogaschamber/biogas-3.jpg' },
+        { src: 'assets/images/biogaschamber/biogas-4.jpg', mobileSrc: 'assets/images/biogaschamber/biogas-4.jpg' },
+        { src: 'assets/images/biogaschamber/biogas-5.jpg', mobileSrc: 'assets/images/biogaschamber/biogas-5.jpg' },
         { src: 'assets/images/biogaschamber/biogas-6.jpg', mobileSrc: 'assets/images/biogaschamber/biogas-6.jpg' },
       ],
       content: `
@@ -66,13 +66,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     'Lairage': {
       images: [
-        { src: 'assets/images/lairage/lairage-1.jpg', mobileSrc: 'assets/imageslairage/lairage-1-mobile.jpg' },
-        { src: 'assets/images/lairage/lairage-2.jpg', mobileSrc: 'assets/imageslairage/lairage-2-mobile.jpg' },
-        { src: 'assets/images/lairage/lairage-3.jpg', mobileSrc: 'assets/imageslairage/lairage-3-mobile.jpg' },
-        { src: 'assets/images/lairage/lairage-4.jpg', mobileSrc: 'assets/imageslairage/lairage-4-mobile.jpg' },
-        { src: 'assets/images/lairage/lairage-5.jpg', mobileSrc: 'assets/imageslairage/lairage-5-mobile.jpg' },
-        { src: 'assets/images/lairage/lairage-6.jpg', mobileSrc: 'assets/imageslairage/lairage-6-mobile.jpg' },
-        { src: 'assets/images/lairage/lairage-7.jpg', mobileSrc: 'assets/imageslairage/lairage-7-mobile.jpg' },
+        { src: 'assets/images/lairage/lairage-1.jpg', mobileSrc: 'assets/images/lairage/lairage-1.jpg' },
+        { src: 'assets/images/lairage/lairage-2.jpg', mobileSrc: 'assets/images/lairage/lairage-2.jpg' },
+        { src: 'assets/images/lairage/lairage-3.jpg', mobileSrc: 'assets/images/lairage/lairage-3.jpg' },
+        { src: 'assets/images/lairage/lairage-4.jpg', mobileSrc: 'assets/images/lairage/lairage-4.jpg' },
+        { src: 'assets/images/lairage/lairage-5.jpg', mobileSrc: 'assets/images/lairage/lairage-5.jpg' },
+        { src: 'assets/images/lairage/lairage-6.jpg', mobileSrc: 'assets/images/lairage/lairage-6.jpg' },
+        { src: 'assets/images/lairage/lairage-7.jpg', mobileSrc: 'assets/images/lairage/lairage-7.jpg' },
       ],
       content: `
         <h4 id="lairageHeading">Humane Animal Holding Facilities</h4>
@@ -88,8 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     'Processing Machine': {
       images: [
-        { src: 'assets/images/processingmachines/processingmachines-1.jpg', mobileSrc: 'assets/images/processingmachines/processingmachines-1-mobile.jpg' },
-        { src: 'assets/images/processingmachines/processingmachines-2.jpg', mobileSrc: 'assets/images/processingmachines/processingmachines-2-mobile.jpg' },
+        { src: 'assets/images/processingmachines/processingmachines-1.jpg', mobileSrc: 'assets/images/processingmachines/processingmachines-1.jpg' },
+        { src: 'assets/images/processingmachines/processingmachines-2.jpg', mobileSrc: 'assets/images/processingmachines/processingmachines-2.jpg' },
       ],
       content: `
         <h4 id="processingHeading">State-of-the-Art Processing Equipment</h4>
@@ -105,17 +105,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     'Market': {
       images: [
-        { src: 'assets/images/market/market-1.jpg', mobileSrc: 'assets/images/market/market-1-mobile.jpg' },
-        { src: 'assets/images/market/market-2.jpg', mobileSrc: 'assets/images/market/market-2-mobile.jpg' },
-        { src: 'assets/images/market/market-3.jpg', mobileSrc: 'assets/images/market/market-3-mobile.jpg' },
-        { src: 'assets/images/market/market-4.jpg', mobileSrc: 'assets/images/market/market-4-mobile.jpg' },
-        { src: 'assets/images/market/market-5.jpg', mobileSrc: 'assets/images/market/market-5-mobile.jpg' },
-        { src: 'assets/images/market/market-6.jpg', mobileSrc: 'assets/images/market/market-6-mobile.jpg' },
-        { src: 'assets/images/market/market-7.jpg', mobileSrc: 'assets/images/market/market-7-mobile.jpg' },
-        { src: 'assets/images/market/market-8.jpg', mobileSrc: 'assets/images/market/market-8-mobile.jpg' },
-        { src: 'assets/images/market/market-9.jpg', mobileSrc: 'assets/images/market/market-9-mobile.jpg' },
-        { src: 'assets/images/market/market-10.jpg', mobileSrc: 'assets/images/market/market-10-mobile.jpg' },
-        { src: 'assets/images/market/market-11.jpg', mobileSrc: 'assets/images/market/market-11-mobile.jpg' },
+        { src: 'assets/images/market/market-1.jpg', mobileSrc: 'assets/images/market/market-1.jpg' },
+        { src: 'assets/images/market/market-2.jpg', mobileSrc: 'assets/images/market/market-2.jpg' },
+        { src: 'assets/images/market/market-3.jpg', mobileSrc: 'assets/images/market/market-3.jpg' },
+        { src: 'assets/images/market/market-4.jpg', mobileSrc: 'assets/images/market/market-4.jpg' },
+        { src: 'assets/images/market/market-5.jpg', mobileSrc: 'assets/images/market/market-5.jpg' },
+        { src: 'assets/images/market/market-6.jpg', mobileSrc: 'assets/images/market/market-6.jpg' },
+        { src: 'assets/images/market/market-7.jpg', mobileSrc: 'assets/images/market/market-7.jpg' },
+        { src: 'assets/images/market/market-8.jpg', mobileSrc: 'assets/images/market/market-8.jpg' },
+        { src: 'assets/images/market/market-9.jpg', mobileSrc: 'assets/images/market/market-9.jpg' },
+        { src: 'assets/images/market/market-10.jpg', mobileSrc: 'assets/images/market/market-10.jpg' },
+        { src: 'assets/images/market/market-11.jpg', mobileSrc: 'assets/images/market/market-11.jpg' },
       ],
       content: `
         <h4 id="marketHeading">Vibrant Retail Marketplace</h4>
@@ -131,14 +131,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     'Abattoir': {
       images: [
-        { src: 'assets/images/abattoir/abattoir-1.jpg', mobileSrc: 'assets/images/abattoir/abattoir-1-mobile.jpg' },
-        { src: 'assets/images/abattoir/abattoir-2.jpg', mobileSrc: 'assets/images/abattoir/abattoir-2-mobile.jpg' },
-        { src: 'assets/images/abattoir/abattoir-3.jpg', mobileSrc: 'assets/images/abattoir/abattoir-3-mobile.jpg' },
-        { src: 'assets/images/abattoir/abattoir-4.jpg', mobileSrc: 'assets/images/abattoir/abattoir-4-mobile.jpg' },
-        { src: 'assets/images/abattoir/abattoir-5.jpg', mobileSrc: 'assets/images/abattoir/abattoir-5-mobile.jpg' },
-        { src: 'assets/images/abattoir/abattoir-6.jpg', mobileSrc: 'assets/images/abattoir/abattoir-6-mobile.jpg' },
-        { src: 'assets/images/abattoir/abattoir-7.jpg', mobileSrc: 'assets/images/abattoir/abattoir-7-mobile.jpg' },
-        { src: 'assets/images/abattoir/abattoir-8.jpg', mobileSrc: 'assets/images/abattoir/abattoir-8-mobile.jpg' },
+        { src: 'assets/images/abattoir/abattoir-1.jpg', mobileSrc: 'assets/images/abattoir/abattoir-1.jpg' },
+        { src: 'assets/images/abattoir/abattoir-2.jpg', mobileSrc: 'assets/images/abattoir/abattoir-2.jpg' },
+        { src: 'assets/images/abattoir/abattoir-3.jpg', mobileSrc: 'assets/images/abattoir/abattoir-3.jpg' },
+        { src: 'assets/images/abattoir/abattoir-4.jpg', mobileSrc: 'assets/images/abattoir/abattoir-4.jpg' },
+        { src: 'assets/images/abattoir/abattoir-5.jpg', mobileSrc: 'assets/images/abattoir/abattoir-5.jpg' },
+        { src: 'assets/images/abattoir/abattoir-6.jpg', mobileSrc: 'assets/images/abattoir/abattoir-6.jpg' },
+        { src: 'assets/images/abattoir/abattoir-7.jpg', mobileSrc: 'assets/images/abattoir/abattoir-7.jpg' },
+        { src: 'assets/images/abattoir/abattoir-8.jpg', mobileSrc: 'assets/images/abattoir/abattoir-8.jpg' },
       ],
       content: `
         <h4 id="abattoirHeading">Humane and Hygienic Processing</h4>
@@ -154,11 +154,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     'Delivery Fleet': {
       images: [
-        { src: 'assets/images/deliveryfleet/deliveryfleet-1.jpg', mobileSrc: 'assets/images/deliveryfleet/deliveryfleet-1-mobile.jpg' },
-        { src: 'assets/images/deliveryfleet/deliveryfleet-2.jpg', mobileSrc: 'assets/images/deliveryfleet/deliveryfleet-2-mobile.jpg' },
-        { src: 'assets/images/deliveryfleet/deliveryfleet-3.jpg', mobileSrc: 'assets/images/deliveryfleet/deliveryfleet-3-mobile.jpg' },
-        { src: 'assets/images/deliveryfleet/deliveryfleet-4.jpg', mobileSrc: 'assets/images/deliveryfleet/deliveryfleet-4-mobile.jpg' },
-        { src: 'assets/images/deliveryfleet/deliveryfleet-5.jpg', mobileSrc: 'assets/images/deliveryfleet/deliveryfleet-5-mobile.jpg' },
+        { src: 'assets/images/deliveryfleet/deliveryfleet-1.jpg', mobileSrc: 'assets/images/deliveryfleet/deliveryfleet-1.jpg' },
+        { src: 'assets/images/deliveryfleet/deliveryfleet-2.jpg', mobileSrc: 'assets/images/deliveryfleet/deliveryfleet-2.jpg' },
+        { src: 'assets/images/deliveryfleet/deliveryfleet-3.jpg', mobileSrc: 'assets/images/deliveryfleet/deliveryfleet-3.jpg' },
+        { src: 'assets/images/deliveryfleet/deliveryfleet-4.jpg', mobileSrc: 'assets/images/deliveryfleet/deliveryfleet-4.jpg' },
+        { src: 'assets/images/deliveryfleet/deliveryfleet-5.jpg', mobileSrc: 'assets/images/deliveryfleet/deliveryfleet-5.jpg' },
       ],
       content: `
         <h4 id="deliveryHeading">Reliable Cold Chain Logistics</h4>
@@ -174,8 +174,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     'Waste Management': {
       images: [
-        { src: 'assets/images/wastemanagement/wastemanagement-1.jpg', mobileSrc: 'assets/images/wastemanagement/wastemanagement-1-mobile.jpg' },
-        { src: 'assets/images/wastemanagement/wastemanagement-2.jpg', mobileSrc: 'assets/images/wastemanagement/wastemanagement-2-mobile.jpg' },
+        { src: 'assets/images/wastemanagement/wastemanagement-1.jpg', mobileSrc: 'assets/images/wastemanagement/wastemanagement-1.jpg' },
+        { src: 'assets/images/wastemanagement/wastemanagement-2.jpg', mobileSrc: 'assets/images/wastemanagement/wastemanagement-2.jpg' },
       ],
       content: `
         <h4 id="wasteHeading">Sustainable Waste Solutions</h4>
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     'Water Treatment': {
       images: [
-        { src: 'assets/images/watertank.jpg', mobileSrc: 'assets/images/watertank-mobile.jpg' },
+        { src: 'assets/images/watertank.jpg', mobileSrc: 'assets/images/watertank.jpg' },
       ],
       content: `
         <h4 id="waterHeading">Advanced Water Purification</h4>

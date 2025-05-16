@@ -202,7 +202,6 @@
 .tab-content {
   display: none;
   animation: fadeIn var(--transition-slow);
-  background-color: #f3f4f6;
 }
 
 .tab-content.active {
